@@ -47,7 +47,7 @@ class Example extends Component {
 }
 ```
 
-![](https://gph.is/g/466z6Wx)
+![](https://media.giphy.com/media/8X2kIbRJZQkdXt46ur/giphy.gif)
 
 ## License
 
