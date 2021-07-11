@@ -4,23 +4,38 @@
 
 [![NPM](https://img.shields.io/npm/v/cart-react-ecommerce.svg)](https://www.npmjs.com/package/cart-react-ecommerce) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+## Features
+
+- Easy-to-use Cart
+- Handles almost all Cart features (There's always some room for improv though)
+- One import > Easy Code
+- Thorough documentation :heart_eyes:
+
+
 ## Install
 
 ```bash
 npm install --save cart-react-ecommerce
 ```
 
+![](https://media.giphy.com/media/1BFEEIo4h1BuTH8eqP/giphy.gif)
+
+
 ## Usage
 
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'cart-react-ecommerce'
-import 'cart-react-ecommerce/dist/index.css'
+import {useCart} from 'cart-react-ecommerce'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return (
+      <div>
+        <h1>Running Cart-React-Ecommerce</h1>
+      </div>
+
+    )
   }
 }
 ```
