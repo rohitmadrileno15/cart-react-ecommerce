@@ -60,8 +60,8 @@ myhappycart.getCartinReverse()
 //Empty your cart
 myhappycart.setCartClear()
 
-//get check our price along with discount or promo price
-myhappycart.getCheckOutPrice ( 1000 )
+//get check our price along with promo price and additional charges
+myhappycart.getCheckOutPrice ( 1000 , 50 )
 
 
 

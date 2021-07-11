@@ -69,13 +69,13 @@ class useCart{
     return val_
   }
 
-  getCheckOutPrice (promo) {
-    if( typeof(promo) != 'number' ) {
-      throw 'Promo must be a number!'
+  getCheckOutPrice (promo = 0, addtionalPrice = 0) {
+    if( typeof(promo) != 'number' && typeof(addtionalPrice) != 'number' ) {
+      throw 'Params must be a number!'
     }
     var gotTotalPrice = this.getTotalPrice().then(
       (r) => {  
-        const final_val = r-promo
+        const final_val = r-promo+addtionalPrice
         return {"currency" : this.cartCurrency , 'grandTotal' : final_val}
       }
     )
