@@ -17,6 +17,7 @@
 - Handles almost all Cart features (There's always some room for improv though)
 - One import && Easy Code
 - Thorough documentation :heart_eyes:
+- Many more to come! 
 
 
 ## Install
