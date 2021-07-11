@@ -15,7 +15,7 @@
 
 - Easy-to-use Cart
 - Handles almost all Cart features (There's always some room for improv though)
-- One import > Easy Code
+- One import && Easy Code
 - Thorough documentation :heart_eyes:
 
 
