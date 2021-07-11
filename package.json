@@ -49,5 +49,10 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "dexie": "^3.0.3",
+    "use-dexie": "^1.2.2",
+    "uuid": "^8.3.2"
+  }
 }
