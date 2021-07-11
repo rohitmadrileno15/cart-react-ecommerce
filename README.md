@@ -28,24 +28,50 @@ npm install --save cart-react-ecommerce
 ![](https://media.giphy.com/media/1BFEEIo4h1BuTH8eqP/giphy.gif)
 
 
-## Usage
+## Code Snippets
 
 ```jsx
-import React, { Component } from 'react'
+//declare the cart
+const myhappycart = new useCart( )
 
-import {useCart} from 'cart-react-ecommerce'
+//Data will be added as name,price,quantity, and a json object comprising any other info
+myhappycart.addItem( "Watch" , 1200 , 1 , {'manufacturer' : 'Abidas'})
+myhappycart.addItem( "Shirt" , 1200 , 1 , {'manufacturer' : 'Abidas'})
 
-class Example extends Component {
-  render() {
-    return (
-      <div>
-        <h1>Running Cart-React-Ecommerce</h1>
-      </div>
+  
+//updates the quantity of the named item
+myhappycart.updateItem("Shirt")
 
-    )
-  }
-}
+//remove a item by name
+myhappycart.removeItem( "Shirt")
+
+//get total price according to item price and quantity
+myhappycart.getTotalPrice ()
+
+//set cart currency for check out usage
+myhappycart.setCartCurrency()
+
+//get entire cart info
+myhappycart.getAll()
+
+//get Cart but in reverse
+myhappycart.getCartinReverse()
+
+//Empty your cart
+myhappycart.setCartClear()
+
+//get check our price along with discount or promo price
+myhappycart.getCheckOutPrice ( 1000 )
+
+
+
 ```
+Checkout more in [examples](https://github.com/rohitmadrileno15/cart-react-ecommerce/tree/master/example).
+
+## Contribute
+
+Add your own awesome gimmick and pull a PR.
+
 
 ![](https://media.giphy.com/media/8X2kIbRJZQkdXt46ur/giphy.gif)
 
