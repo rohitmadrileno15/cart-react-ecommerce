@@ -24,7 +24,8 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.0.0" ,
+    "dexie": "^3.0.3"
   },
   "devDependencies": {
     "microbundle-crl": "^0.13.10",
@@ -51,8 +52,6 @@
     "dist"
   ],
   "dependencies": {
-    "dexie": "^3.0.3",
-    "use-dexie": "^1.2.2",
-    "uuid": "^8.3.2"
+    "dexie": "^3.0.3"
   }
 }
