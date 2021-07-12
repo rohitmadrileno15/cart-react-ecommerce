@@ -172,7 +172,6 @@ class useBag{
 
 
  
-clear
 
 
 export { useCart , useBag }
