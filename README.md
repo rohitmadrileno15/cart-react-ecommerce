@@ -17,8 +17,8 @@
 - Handles almost all Cart features (There's always some room for improv though)
 - One import && Easy Code
 - Thorough documentation :heart_eyes:
-- Many more to come! 
-
+- Now,Comes an easy to plug in Bag feature (Works more like Shortlister) 
+- Shortlist your Products in Bag and add them Cart whenever you want
 
 ## Install
 
@@ -31,29 +31,31 @@ npm install --save cart-react-ecommerce
 
 ## Code Snippets
 
+#### *Cart* usage
+
 ```jsx
 //declare the cart
 const myhappycart = new useCart( )
 
 //Data will be added as name,price,quantity, and a json object comprising any other info
-myhappycart.addItem( "Watch" , 1200 , 1 , {'manufacturer' : 'Abidas'})
-myhappycart.addItem( "Shirt" , 1200 , 1 , {'manufacturer' : 'Abidas'})
+myhappycart.addCartItem( "Watch" , 1200 , 1 , {'manufacturer' : 'Abidas'})
+myhappycart.addCartItem( "Shirt" , 1200 , 1 , {'manufacturer' : 'Abidas'})
 
   
-//updates the quantity of the named item
-myhappycart.updateItem("Shirt")
+//updates the quantity of the named CartItem
+myhappycart.updateCartItem("Shirt")
 
-//remove a item by name
-myhappycart.removeItem( "Shirt")
+//remove a CartItem by name
+myhappycart.removeCartItem( "Shirt")
 
-//get total price according to item price and quantity
-myhappycart.getTotalPrice ()
+//get total price according to CartItem price and quantity
+myhappycart.getCartTotalPrice ()
 
 //set cart currency for check out usage
 myhappycart.setCartCurrency()
 
 //get entire cart info
-myhappycart.getAll()
+myhappycart.getCartAll()
 
 //get Cart but in reverse
 myhappycart.getCartinReverse()
@@ -62,11 +64,36 @@ myhappycart.getCartinReverse()
 myhappycart.setCartClear()
 
 //get check our price along with promo price and additional charges
-myhappycart.getCheckOutPrice ( 1000 , 50 )
+myhappycart.getCartCheckOutPrice ( 1000 , 50 )
 
 
 
 ```
+
+#### *Bag* usage
+
+*Product can be added only once and removed thus. And, no further update of quantity (as undeclared)*
+
+```jsx
+//declare the cart
+const myhappybag = new useBag( )
+
+//Data will be added as name,price and a json object comprising any other info
+myhappybag.addBagItem( "Watch" , 1200  , {'manufacturer' : 'Abidas'})
+myhappybag.addBagItem( "Shirt" , 1200   , {'manufacturer' : 'Abidas'})
+
+//remove a BagItem by name
+myhappybag.removeBagItem( "Shirt")
+
+//get entire Bag info
+myhappybag.getBagAll()
+
+//Empty your cart
+myhappybag.setBagClear()
+
+
+```
+
 Checkout more in [examples](https://github.com/rohitmadrileno15/cart-react-ecommerce/tree/master/example).
 
 ## Contribute

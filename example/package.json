@@ -10,10 +10,10 @@
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
-    "react": "link:../node_modules/react",
-    "react-dom": "link:../node_modules/react-dom",
-    "react-scripts": "link:../node_modules/react-scripts",
-    "cart-react-ecommerce": "link:.."
+    "react": "../node_modules/react",
+    "react-dom": "../node_modules/react-dom",
+    "react-scripts": "../node_modules/react-scripts",
+    "cart-react-ecommerce": ".."
   },
   "devDependencies": {
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3"
